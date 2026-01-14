@@ -36,7 +36,7 @@ def build_cards(records):
         photo = (r.get("Photo") or "").strip()
 
         link_html = f'<a href="{results_url}">Meet results</a>' if results_url else "<span>No results link</span>"
-        photo_html = f'<img src="images/{photo}" alt="Photo for {meet}">' if photo else ""
+        photo_html = f'<img src="images/{photo}" alt="Photo for {meet}" width=200>' if photo else ""
 
         cards.append(f"""
 <article>
